@@ -13,8 +13,8 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
-    <string name="facebook_app_id">1748305135416609</string>
+    <string name="facebook_app_id">1718871275053201</string>
+    <string name="fb_login_protocol_scheme">fb1718871275053201</string>
+    <string name="title_activity_music">MusicActivity</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
