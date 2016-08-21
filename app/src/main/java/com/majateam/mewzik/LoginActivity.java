@@ -19,7 +19,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * A login screen that offers login via email/password.
+ * Facebook Login screen
+ * Created by Nicolas Martino on 20/08/2016.
  */
 public class LoginActivity extends FragmentActivity {
 
@@ -39,15 +40,10 @@ public class LoginActivity extends FragmentActivity {
         ButterKnife.bind(this);
 
         mCallbackManager = CallbackManager.Factory.create();
-        //mLoginButton.setReadPermissions(Arrays.asList("public_profile", "user_interests"));
-        mLoginButton.setReadPermissions(Arrays.asList("user_status", "email", "user_likes"));
+        mLoginButton.setReadPermissions(Arrays.asList("user_likes"));
         mLoginButton.registerCallback(mCallbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
-                /*LoginManager.getInstance().logInWithReadPermissions(
-                        LoginActivity.this,
-                        Arrays.asList("email"));*/
-                mLoginTextView.setText("Auth Token:" + loginResult.getAccessToken());
                 Intent intent = new Intent(LoginActivity.this, MusicActivity.class);
                 intent.putExtra(MusicActivity.USER_ID, loginResult.getAccessToken().getUserId());
                 startActivity(intent);

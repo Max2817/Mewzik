@@ -44,7 +44,8 @@
         <activity
             android:name=".MusicActivity"
             android:label="@string/title_activity_music"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PlaylistActivity"></activity>
     </application>
 
 </manifest>

@@ -16,5 +16,6 @@
     <string name="facebook_app_id">1718871275053201</string>
     <string name="fb_login_protocol_scheme">fb1718871275053201</string>
     <string name="title_activity_music">MusicActivity</string>
-
+    <string name="loading_retrieving_facebook_music">Retrieving your Facebook Music preferences…</string>
+    <string name="loading_retrieving_soundcloud_playlist">Retrieving SoundCloud playlist…</string>
 </resources>
